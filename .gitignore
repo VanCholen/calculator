@@ -1,6 +1,10 @@
 .vscode/
 .vscode/*
 
+# 忽略当前目录下名为 bin 的文件夹
+/bin
+
 # 忽略任何目录下名为 build 的文件夹
 build/
+
 build/*

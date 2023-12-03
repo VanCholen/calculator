@@ -12,12 +12,15 @@ add_subdirectory(external/fmt)
 
 # 3rdparty  opencv 4.8.0  mac-arm
 find_package(OpenCV REQUIRED 
-			PATHS ./3rdparty/opencv480/mac-arm 
+			PATHS ./3rdparty/opencv480/darwin-arm64
 			NO_DEFAULT_PATH)
 
 
 add_executable(main main.cpp)
-
+# 将生成的二进制文件放置在当前源代码目录下的bin目录中
+set_target_properties(main PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin
+)
 
 target_link_libraries(main PRIVATE calculator)
 target_link_libraries(main PRIVATE spdlog::spdlog)
