@@ -7,3 +7,9 @@
 [submodule "external/poco"]
 	path = external/poco
 	url = https://github.com/pocoproject/poco.git
+[submodule "external/opencv"]
+	path = external/opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "external/opencv_contrib"]
+	path = external/opencv_contrib
+	url = https://github.com/opencv/opencv_contrib.git
