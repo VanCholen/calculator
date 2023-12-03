@@ -30,7 +30,7 @@ git checkout 4.8.0 # 切换你要使用opencv_contrib的版本(注意⚠️要�
 cd ../opencv
 mkdir build && cd build
 
-cmake -DCMAKE_BUILD_TYPE=Release -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=../../../3rdparty/opencv480/mac-arm .. 
+cmake -DCMAKE_BUILD_TYPE=Release -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=../../../3rdparty/opencv480/darwin-arm64 .. 
 #################################################################
 # CMAKE_BUILD_TYPE 指定Release模式
 # OPENCV_EXTRA_MODULES_PATH 指定opencv_contrib的目录下的modules目录
