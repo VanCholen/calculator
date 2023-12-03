@@ -28,7 +28,7 @@ git tag         # 查看有哪些版本
 git checkout 4.8.0 # 切换你要使用opencv_contrib的版本(注意⚠️要和opencv保持一致)
 
 cd ../opencv
-mkdir build
+mkdir build && cd build
 
 cmake -DCMAKE_BUILD_TYPE=Release -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DCMAKE_INSTALL_PREFIX=../../../3rdparty/opencv480/mac-arm .. 
 #################################################################
