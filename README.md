@@ -45,6 +45,15 @@ rm -rf build    # 完成编译后build目录就可以删掉了
 
 ```
 
+# 3rdparty/opencv480/windows-amd64目录下所有文件的来源
+从官网直接下载，然后把build目录下的所有文件拷贝至此。
+
+由于git的限制，我将3rdparty/opencv480/windows-amd64/x64/vc16/bin下的**opencv_world480.pdb**、
+**opencv_world480d.dll**、**opencv_world480d.pdb**删除了，因此在Windows下选择
+编译工具链时不能使用debug模式，如果需要使用，请自行添加这三个文件。
+
+- 将编译工具链选择为msvc的编译器 ==> cmake select kit
+- 3rdparty/opencv480/windows-amd64/x64/vc16/bin下的**opencv_world480.dll**这个动态库拷贝到本项目生成的可执行文件下，以便能够顺利执行。
 
 
 # Version
