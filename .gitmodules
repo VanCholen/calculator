@@ -13,3 +13,6 @@
 [submodule "external/opencv_contrib"]
 	path = external/opencv_contrib
 	url = https://github.com/opencv/opencv_contrib.git
+[submodule "external/nlohmann_json"]
+	path = external/nlohmann_json
+	url = https://github.com/nlohmann/json.git

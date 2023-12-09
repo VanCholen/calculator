@@ -66,3 +66,5 @@ poco poco-1.11.3-release
 opencv 4.8.0
 
 opencv_contrib 4.80
+
+nlohmann_json v3.11.3
