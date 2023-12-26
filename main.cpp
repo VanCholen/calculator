@@ -42,6 +42,8 @@ cv::Mat RotateImage(cv::Mat src, double angle)
     return dst;
 }
 
+
+
 int main(int argc, char *argv[])
 {
     // add(1, 3);
@@ -54,7 +56,7 @@ int main(int argc, char *argv[])
     auto j = json::parse(R"({"happy": true, "pi": 3.141})");
     spdlog::info(j.dump(4));
 
-    cv::Mat src = cv::imread("/Users/cholen/Downloads/cat.jpg");
+    cv::Mat src = cv::imread("./resource/cat.jpg");
     cv::namedWindow("src", cv::WINDOW_AUTOSIZE);
     cv::imshow("src", src);
 
